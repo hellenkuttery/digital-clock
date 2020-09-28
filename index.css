@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    font-family: 'Titillium Web', sans-serif;
+
+
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#picture,#picture_clock{
+    position:relative;
+    width: 220px;
+    padding:7px;
+    height: auto;
+    border:1px solid #aaa;
+    transform-origin: center;
+    transform:perspective(800px) rotateY(20deg);
+    transition:0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+#picture:hover,#picture_clock:hover{
+    transform:perspective(800px) rotateY(0deg);
+    opacity:1;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:#ccc;
+    font-weight: 500;
+    text-shadow: -2px 1px rgb(107,230,19);
+    
+}
+.clock  { 
+    position: absolute; 
+    top:10px;
+    font-size:30px;
+    margin-left: 25px;
+    align-items:center;
+    color:rgb(107, 230, 19);
+    transform-origin: center;
+    transform:perspective(800px) rotateY(20deg);
+    transition:0.5s;    
+ }
+ .clock:hover{
+    transform:perspective(800px) rotateY(0deg);
+    opacity:1;
+ }
